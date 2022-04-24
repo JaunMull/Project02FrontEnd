@@ -1,0 +1,49 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "fullName": "HarryJ",
+      "phone": 8643657855,
+      "email": "wire@gmail.com"
+    },
+    {
+      "id": 3,
+      "fullName": "test",
+      "phone": 2341231234,
+      "email": "test@gmail.com"
+    },
+    {
+      "id": 5,
+      "fullName": "JOE",
+      "phone": 1243564785,
+      "email": "qop@gmail.com"
+    }
+  ],
+  "signupUsers": [
+    {
+      "fullName": "",
+      "phone": 9876543212,
+      "email": "yu@Gmail.com",
+      "password": "weter",
+      "id": 1
+    },
+    {
+      "fullName": null,
+      "phone": 2345678901,
+      "email": "tew@gmail.com",
+      "password": "try",
+      "id": 2
+    },
+    {
+      "fullName": "Pok lik",
+      "phone": 986789098,
+      "email": "saw@gmail.com",
+      "password": "heyy",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
