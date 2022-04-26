@@ -6,6 +6,8 @@ import { MemberDashboardComponent } from './member-dashboard/member-dashboard.co
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -13,6 +15,8 @@ import { SignupComponent } from './signup/signup.component';
     AppComponent,
     MemberDashboardComponent,
     SignupComponent,
+    LoginComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

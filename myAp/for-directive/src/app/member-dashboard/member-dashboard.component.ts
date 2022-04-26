@@ -85,4 +85,5 @@ updateMemberDetails(){
     this.getAllMember();
   })
 }
+
 }
