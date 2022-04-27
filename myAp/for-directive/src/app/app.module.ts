@@ -8,6 +8,10 @@ import { HttpClientModule} from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { RecoverinfoComponent } from './recoverinfo/recoverinfo.component';
+import { TwodmodelComponent } from './twodmodel/twodmodel.component';
+import { ThreedmodelComponent } from './threedmodel/threedmodel.component';
+import { InformationComponent } from './information/information.component';
 
 
 @NgModule({
@@ -17,6 +21,10 @@ import { HomeComponent } from './home/home.component';
     SignupComponent,
     LoginComponent,
     HomeComponent,
+    RecoverinfoComponent,
+    TwodmodelComponent,
+    ThreedmodelComponent,
+    InformationComponent,
   ],
   imports: [
     BrowserModule,
