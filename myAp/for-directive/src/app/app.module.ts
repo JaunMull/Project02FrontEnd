@@ -8,6 +8,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { SolarSystemComponent } from './solar-system/solar-system.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { HomeComponent } from './home/home.component';
     SignupComponent,
     LoginComponent,
     HomeComponent,
+    SolarSystemComponent,
   ],
   imports: [
     BrowserModule,

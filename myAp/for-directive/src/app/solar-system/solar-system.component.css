@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 200vmin;
+}
+
+.object{
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(50vmin);
+}
+
+.zoom{
+    height: 100vmin;
+    width: 100vmin;
+}
+
+
+
+.p-orbit{
+    border: 0.1vmin solid lightgrey;
+    opacity: 0.5;
+    background: transparent;
+
+}
+
+#belt{
+    height: 97vmin;
+    width: 97vmin;
+    animation: spin 50s infinite linear;
+    margin-top: 50vmin;
+}
+
+@keyframes spin{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(-360deg)}
+}
+
+.planet{
+    z-index: 100;
+}
+
+#Sun{
+    height: 12vmin;
+    width: 12vmin;
+}
+
+#moon{
+    height: 1vmin;
+    width: 1vmin;
+    background-color: white;
+}
+
+#Mercury{
+    height: 2vmin;
+    width: 2vmin; 
+}
+
+#Venus{
+    height: 3vmin;
+    width: 3vmin;
+}
+
+#Earth{
+    height: 4vmin;
+    width: 4vmin;
+}
+
+#Mars{
+    height: 3.5vmin;
+    width: 3.5vmin;
+}
+
+#Jupiter{
+    height: 8vmin;
+    width: 8vmin;
+}
+
+#Saturn{
+    border-radius: 0%;
+    height: 12vmin;
+    width: 12vmin;
+}
+
+#Uranus{
+    height: 6vmin;
+    width: 6vmin;
+}
+
+#Neptune{
+    height: 5vmin;
+    width: 5vmin;
+}
+
+img.object:hover { 
+    
+      position: relative;
+      -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 1000;
+}
