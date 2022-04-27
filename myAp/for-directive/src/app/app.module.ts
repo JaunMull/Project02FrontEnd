@@ -12,6 +12,7 @@ import { RecoverinfoComponent } from './recoverinfo/recoverinfo.component';
 import { TwodmodelComponent } from './twodmodel/twodmodel.component';
 import { ThreedmodelComponent } from './threedmodel/threedmodel.component';
 import { InformationComponent } from './information/information.component';
+import { SolarSystemComponent } from './solar-system/solar-system.component';
 
 
 @NgModule({
@@ -25,6 +26,8 @@ import { InformationComponent } from './information/information.component';
     TwodmodelComponent,
     ThreedmodelComponent,
     InformationComponent,
+    SolarSystemComponent,
+
   ],
   imports: [
     BrowserModule,

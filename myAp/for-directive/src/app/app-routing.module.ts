@@ -8,6 +8,8 @@ import { RecoverinfoComponent } from './recoverinfo/recoverinfo.component';
 import { SignupComponent } from './signup/signup.component';
 import { ThreedmodelComponent } from './threedmodel/threedmodel.component';
 import { TwodmodelComponent } from './twodmodel/twodmodel.component';
+import { SolarSystemComponent } from './solar-system/solar-system.component';
+
 
 
 const routes: Routes = [
@@ -16,10 +18,12 @@ const routes: Routes = [
   {path:'dashboard', component:MemberDashboardComponent},
   {path:'login', component:LoginComponent},
   {path:'home', component:HomeComponent},
+
   {path:'recover', component:RecoverinfoComponent},
   {path:'information', component:InformationComponent},
   {path:'twodmodel', component:TwodmodelComponent},
   {path:'threedmodel', component:ThreedmodelComponent},
+  {path: 'app-solar-system', component:SolarSystemComponent},
 ];
 
 @NgModule({
