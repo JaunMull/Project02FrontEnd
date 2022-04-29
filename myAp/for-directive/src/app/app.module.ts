@@ -9,6 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { SolarSystemComponent } from './solar-system/solar-system.component';
+import { SlidesComponent } from './slides/slides.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SolarSystemComponent } from './solar-system/solar-system.component';
     LoginComponent,
     HomeComponent,
     SolarSystemComponent,
+    SlidesComponent,
   ],
   imports: [
     BrowserModule,

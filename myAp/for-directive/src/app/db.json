@@ -40,6 +40,13 @@
       "email": "saw@gmail.com",
       "password": "heyy",
       "id": 3
+    },
+    {
+      "fullName": "Tameka Edwards",
+      "phone": 8646789087,
+      "email": "t@gmail.com",
+      "password": "peace",
+      "id": 4
     }
   ],
   "comments": [],

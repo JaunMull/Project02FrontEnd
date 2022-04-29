@@ -3,47 +3,40 @@
 <head>
     <title>Solar System</title>
     <link rel="stylesheet" href="solar-system.component.css">
-    
 </head>
 <script>
-    $(function () {
-"use strict";
-
-$(".popup img").click(function () {
-  var $src = $(this).attr("src");
-  $(".show").fadeIn();
-  $(".img-show img").attr("src", $src);
-});
-
-$("span, .overlay").click(function () {
-  $(".show").fadeOut();
-});
-
-});
-</script>
+      $(function () {
+  "use strict";
+  
+  $(".popup img").click(function () {
+    var $src = $(this).attr("src");
+    $(".show").fadeIn();
+    $(".img-show img").attr("src", $src);
+  });
+  
+  $("span, .overlay").click(function () {
+    $(".show").fadeOut();
+  });
+  
+  });
+  </script>
 <body>
     
   
         <div class="popup">
            
-            <img class="object planet" src="../assets/mercury.png">
-            <img class="object planet" src="../assets/venus.png">
-            <img class="object planet" src="../assets/Earth.png">
-            <img class="object planet" src="../assets/mars.png"     >
-            <img class="object planet" src="../assets/jupiter.png"   >
-            <img class="object planet" src="../assets/saturn.png"      >
-            <img class="object planet" src="../assets/uranus.png"     >
-            <img class="object planet" src="../assets/neptune.png"   >
+            <img class="object planet" src="../assets/mercury.png"  id="Mercury">
+            <img class="object planet" src="../assets/venus.png"id="Venus">
+            <img class="object planet" src="../assets/Earth.png"id="Earth">
+            <img class="object planet" src="../assets/mars.png"  id="Mars"   >
+            <img class="object planet" src="../assets/jupiter.png" id="Jupiter"  >
+            <img class="object planet" src="../assets/saturn.png"    id="Saturn"  >
+            <img class="object planet" src="../assets/uranus.png"    id="Uranus" >
+            <img class="object planet" src="../assets/neptune.png"  id="Neptune" >
 
             </div>
 
-            <div class="show">
-                <div class="overlay"></div>
-                <div class="img-show">
-                  <span>X</span>
-                  <img src="">
-                </div>
-              </div>            <!-- <img class='object'        src='../assets/sun.png'            id='Sun'        >
+               <!-- <img class='object'        src='../assets/sun.png'            id='Sun'        >
     <img class="object planet" src="../assets/mercury.png"        id="Mercury"    >
     <img class="object planet" src="../assets/venus.png"          id="Venus"      >
     <img class="object planet" src="../assets/Earth.png"          id="Earth"      >
@@ -68,8 +61,16 @@ $("span, .overlay").click(function () {
     <div class="object p-orbit"></div>
     <div class="object p-orbit"></div>
 
-    
+    <div class="show">
+      <div class="overlay"></div>
+      <div class="img-show">
+        <span>X</span>
+        <img src="">
+      </div>
+    </div>       
 
+    
+  
     <script src="app.component.ts"></script>
 
 </body>
