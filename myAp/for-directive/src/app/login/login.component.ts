@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
           return a.email === this.loginForm.value.email && a.password === this.loginForm.value.password
       });
       if(user){
-        alert("Login Success");
+        //alert("Login Success");
         this.loginForm.reset();
         this.router.navigate(['home'])
       }else{
