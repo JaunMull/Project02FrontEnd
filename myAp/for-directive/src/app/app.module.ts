@@ -13,6 +13,7 @@ import { TwodmodelComponent } from './twodmodel/twodmodel.component';
 import { ThreedmodelComponent } from './threedmodel/threedmodel.component';
 import { InformationComponent } from './information/information.component';
 import { SolarSystemComponent } from './solar-system/solar-system.component';
+import { SlidesComponent } from './slides/slides.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { SolarSystemComponent } from './solar-system/solar-system.component';
     ThreedmodelComponent,
     InformationComponent,
     SolarSystemComponent,
+    SlidesComponent,
 
   ],
   imports: [
