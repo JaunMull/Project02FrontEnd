@@ -13,7 +13,7 @@ import { SolarSystemComponent } from './solar-system/solar-system.component';
 
 
 const routes: Routes = [
-  {path:'', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path:'', redirectTo: 'login', pathMatch: 'full'},
   {path:'signup', component:SignupComponent},
   {path:'dashboard', component:MemberDashboardComponent},
   {path:'login', component:LoginComponent},

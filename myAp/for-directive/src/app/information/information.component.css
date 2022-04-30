@@ -1,0 +1,13 @@
+.top-left {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+  }
+
+  body{
+    background-color: white;
+  }
+
+  details{
+    color: black;
+  }
