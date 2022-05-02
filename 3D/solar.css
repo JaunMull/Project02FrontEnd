@@ -1,0 +1,12 @@
+body { 
+    margin: 0;
+  }
+  
+  #canvas {
+    position: fixed;
+  }
+  
+  .dg.ac {
+    z-index: 1 !important;
+  }
+  
