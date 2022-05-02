@@ -3,14 +3,12 @@
      box-sizing: border-box;
 }
 .bg {
-    background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -3;
+    background: url(https://i.ibb.co/87GbbFP/2799006.jpg) no-repeat center fixed;
+     background-size: cover;
+     margin-top: 0px;
+     left: 0;
+     z-index: -3;
+     align-items: center;
 }
 .bg:before {
     content: "";
@@ -54,7 +52,7 @@
     }
 }
 .star-field {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -92,6 +90,7 @@
     animation: sf-fly-by-3 5s linear infinite;
 }
 
+
  .slide-container {
      margin: auto;
      width: 600px;
@@ -123,6 +122,15 @@
      margin-bottom: 35px;
      border-top-left-radius: 14px;
      border-top-right-radius: 14px;
+}
+.clash-card__image--sun {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
+}
+.clash-card__image--sun img {
+    width: 400px;
+    position: absolute;
+    top: -45px;
+    left: -70px;
 }
  .clash-card__image--barbarian {
      background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
@@ -237,6 +245,12 @@
      padding: 20px;
      margin-bottom: 10px;
      color: #fff;
+}
+.clash-card__unit-stats--sun {
+    background: #d82100;
+}
+.clash-card__unit-stats--sun .one-third {
+    border-right: 1px solid #d82100;
 }
  .clash-card__unit-stats--barbarian {
      background: #ec9b3b;
