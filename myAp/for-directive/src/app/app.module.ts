@@ -14,6 +14,7 @@ import { ThreedmodelComponent } from './threedmodel/threedmodel.component';
 import { InformationComponent } from './information/information.component';
 import { SolarSystemComponent } from './solar-system/solar-system.component';
 import { SlidesComponent } from './slides/slides.component';
+import { SlidessComponent } from './slides2/slides.component';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { SlidesComponent } from './slides/slides.component';
     InformationComponent,
     SolarSystemComponent,
     SlidesComponent,
-
+    SlidessComponent
   ],
   imports: [
     BrowserModule,
