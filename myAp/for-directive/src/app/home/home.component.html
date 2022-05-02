@@ -8,27 +8,52 @@
         <li class="nav-item">
             <a routerLink="/threedmodel" routerLinkActive="active" class="nav-link">3D Model</a>
         </li>
+        
         <li class="nav-item">
-            <a routerLink="/information" routerLinkActive="active" class="nav-link">Information</a>
+            <a routerLink="/slides" routerLinkActive="active" class="nav-link">Slides</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="/slidess" routerLinkActive="active" class="nav-link">Information</a>
         </li>
     </ul>    
+    
 </nav>
+<div class="bg"></div>
 
-<div class=swipe >
-    <img class='object'        src='../assets/sun.png'            id='Sun'     style="width:40%"  >
-    <img class="object planet" src="../assets/mercury.png"        id="Mercury"   style="width:40%" >
-    <img class="object planet" src="../assets/venus.png"          id="Venus"    style="width:40%" >
-    <img class="object planet" src="../assets/Earth.png"          id="Earth"    style="width:40%"  >
-    <img class="object planet" src="../assets/mars.png"           id="Mars"       style="width:40%" >
-    <img class="object planet" src="../assets/jupiter.png"        id="Jupiter"   style="width:40%"  >
-    <img class="object planet" src="../assets/saturn.png"         id="Saturn"   style="width:40%"   >
-    <img class="object planet" src="../assets/uranus.png"         id="Uranus"     style="width:40%" >
-    <img class="object planet" src="../assets/neptune.png"        id="Neptune"   style="width:40%" >
-    <img class="object"        src="../assets/asteroid belt.png"  id="belt"      style="width:40%"  >
-</div>
+<div class="star-field">
+<div class="layer"></div>
+<div class="layer"></div>
+<div class="layer"></div>
 
-<router-outlet></router-outlet>
+<div class="starwars-demo">
+    <img src="../assets/WELCOME2.png" alt="Star" class="star">
+    <img src="../assets/WELCOME2.png" alt="Wars" class="wars">
 
 
+
+
+    
+    <h2 class="byline" id="byline">To The Solar System</h2>
+  </div>
+
+<script>
+var byline = document.getElementById('byline');   // Find the H2
+    bylineText = byline.innerHTML;                    // Get the content of the H2
+    bylineArr = bylineText.split('');                 // Split content into array
+    byline.innerHTML = '';                            // Empty current content
+    
+    var span;         // Create variables to create elements
+    var letter;
+    
+    for(i=0;i<bylineArr.length;i++){                  // Loop for every letter
+      span = document.createElement("span");          // Create a <span> element
+      letter = document.createTextNode(bylineArr[i]); // Create the letter
+      if(bylineArr[i] == ' ') {                       // If the letter is a space...
+        byline.appendChild(letter);         // ...Add the space without a span
+      } else {
+        span.appendChild(letter);           // Add the letter to the span
+        byline.appendChild(span);           // Add the span to the h2
+      }
+    }</script>
 
 
