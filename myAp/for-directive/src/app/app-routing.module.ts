@@ -13,6 +13,7 @@ import { ThreedmodelComponent } from './threedmodel/threedmodel.component';
 import { TwodmodelComponent } from './twodmodel/twodmodel.component';
 
 import { SolarSystemComponent } from './solar-system/solar-system.component';
+import { SlidessComponent } from './slides2/slides.component';
 
 
 
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:'twodmodel', component:TwodmodelComponent},
   {path:'threedmodel', component:ThreedmodelComponent},
   {path: 'app-solar-system', component:SolarSystemComponent},
-  {path: 'slides', component:SlidesComponent}
+  {path: 'slides', component:SlidesComponent},
+  {path: 'slidess', component:SlidessComponent}
 ];
 
 @NgModule({
