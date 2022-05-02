@@ -1,28 +1,32 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <ul class="navbar-nav">
-            <li class="nav-item">
-                    <a routerLink="/app-solar-system" routerLinkActive="active" class="nav-link">Solar System</a>
-            </li>
-        <li class="nav-item">
-            <a routerLink="/threedmodel" routerLinkActive="active" class="nav-link">3D Model</a>
-        </li>
-        <li class="nav-item">
-            <a routerLink="/slides" routerLinkActive="active" class="nav-link">Slides</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/slidess" routerLinkActive="active" class="nav-link">Information</a>
-      </li>
+      <li class="nav-item">
+        <a routerLink="/app-solar-system" routerLinkActive="active" class="nav-link" id="Solar System">Solar System</a>
+</li>
+<li class="nav-item">
+<a routerLink="/threedmodel" routerLinkActive="active" class="nav-link" id="3D Model">3D Model</a>
+</li>
+<li class="nav-item">
+<a routerLink="/slides" routerLinkActive="active" class="nav-link" id ="Slides">Slides</a>
+</li>
+<li class="nav-item">
+<a routerLink="/slidess" routerLinkActive="active" class="nav-link" id="Slidess">Information</a>
+</li>
     </ul>    
 </nav>
-<button class="top-right" (click)="home()">HOME</button> 
+<button class="top-right" (click)="home()" id="home">HOME</button> 
 
   <div [ngSwitch]="plt"> 
     <div *ngSwitchCase="'Mercury'" class="top-left">
       <ul *ngFor="let p of planet">
-          <li> Name: {{p.name}}</li>
-          <li> Type: {{p.type}}</li>
-          <li> Density: {{p.density}}</li>
+        <li> Name: {{p.name}}</li>
+        <li> Type: {{p.type}}</li>
+        <li> Density: {{p.density}}</li>
+        <li> Gravity: {{p.gravity}}</li>
+        <li> Number of moons: {{p.moons}}</li>
+        <li> Number of Planet Years: {{p.planetyears}}</li>
+        <li> Distance From the sun: {{p.sundistance}}</li>
       </ul>
     </div>
   <div class="text-center"> 
@@ -32,80 +36,127 @@
   
   <div *ngSwitchCase="'Venus'"  class="top-left" >
     <ul *ngFor="let p of planet">
-        <li> Name: {{p.name}}</li>
-        <li> Type: {{p.type}}</li>
-        <li> Density: {{p.density}}</li>
+      <li> Name: {{p.name}}</li>
+      <li> Type: {{p.type}}</li>
+      <li> Density: {{p.density}}</li>
+      <li> Gravity: {{p.gravity}}</li>
+      <li> Number of moons: {{p.moons}}</li>
+      <li> Number of Planet Years: {{p.planetyears}}</li>
+      <li> Distance From the sun: {{p.sundistance}}</li>
     </ul>
 </div>
   <div class="text-center">
-    
+  
     <h3>Venus</h3>
       <img class="object planet" src="../assets/Veenus.gif" alt="archer"       id="Earth"    style="width:40%" (click)="venus()" >  
-  
+    </div>
      
         <div *ngSwitchCase="'Earth'" class="top-left">
           <ul *ngFor="let p of planet">
-              <li> Name: {{p.name}}</li>
-              <li> Type: {{p.type}}</li>
-              <li> Density: {{p.density}}</li>
-          </ul>
-        </div>
-        <h3>Earth</h3>
-      <img class="object planet" src="../assets/giphy.gif" alt="giant"          id="Earth"    style="width:40%" (click)="earth()" >  
-      <div *ngSwitchCase="'Mars'" class="top-left">
-        <ul *ngFor="let p of planet">
             <li> Name: {{p.name}}</li>
             <li> Type: {{p.type}}</li>
             <li> Density: {{p.density}}</li>
+            <li> Gravity: {{p.gravity}}</li>
+            <li> Number of moons: {{p.moons}}</li>
+            <li> Number of Planet Years: {{p.planetyears}}</li>
+            <li> Distance From the sun: {{p.sundistance}}</li>
+          </ul>
+        </div>
+        <div class="text-center">
+       
+        <h3>Earth</h3>
+      <img class="object planet" src="../assets/giphy.gif" alt="giant"          id="Earth"    style="width:40%" (click)="earth()" >  
+    </div>
+      <div *ngSwitchCase="'Mars'" class="top-left">
+        <ul *ngFor="let p of planet">
+          <li> Name: {{p.name}}</li>
+          <li> Type: {{p.type}}</li>
+          <li> Density: {{p.density}}</li>
+          <li> Gravity: {{p.gravity}}</li>
+          <li> Number of moons: {{p.moons}}</li>
+          <li> Number of Planet Years: {{p.planetyears}}</li>
+          <li> Distance From the sun: {{p.sundistance}}</li>
         </ul>
       </div>
+      <div class="text-center">
+      
       <h3>Mars</h3>
       <img class="object planet" src="../assets/MARS.gif" alt="goblin"        id="Earth"    style="width:40%" (click)="mars()" >  
-  
-      <h3>Neptune</h3>
+    </div>
+    
         <div *ngSwitchCase="'Jupiter'" class="top-left">
           <ul *ngFor="let p of planet">
-              <li> Name: {{p.name}}</li>
-              <li> Type: {{p.type}}</li>
-              <li> Density: {{p.density}}</li>
+            <li> Name: {{p.name}}</li>
+            <li> Type: {{p.type}}</li>
+            <li> Density: {{p.density}}</li>
+            <li> Gravity: {{p.gravity}}</li>
+            <li> Number of moons: {{p.moons}}</li>
+            <li> Number of Planet Years: {{p.planetyears}}</li>
+            <li> Distance From the sun: {{p.sundistance}}</li>
           </ul>
         </div>
+        <div class="text-center">
+        
+          <h3>Jupiter</h3>
       <img class="object planet" src="../assets/JUPITER.gif" alt="wizard"        id="Earth"    style="width:40%" (click)="jupiter()" >  
-  
-      <h3>Saturn</h3>
+    </div>
+      
         <div *ngSwitchCase="'Saturn'" class="top-left">
           <ul *ngFor="let p of planet">
-              <li> Name: {{p.name}}</li>
-              <li> Type: {{p.type}}</li>
-              <li> Density: {{p.density}}</li>
+            <li> Name: {{p.name}}</li>
+            <li> Type: {{p.type}}</li>
+            <li> Density: {{p.density}}</li>
+            <li> Gravity: {{p.gravity}}</li>
+            <li> Number of moons: {{p.moons}}</li>
+            <li> Number of Planet Years: {{p.planetyears}}</li>
+            <li> Distance From the sun: {{p.sundistance}}</li>
           </ul>
         </div>
+
+        <div class="text-center">
+        
+        <h3>Saturn</h3>
       <img class="object planet" src="../assets/SATURN.gif" alt="fighter"       id="Earth"    style="width:40%" (click)="saturn()" >  
-  
-      <h3>Uranus</h3>
+    </div>
+      <div class="text-center">
+      </div>
+    
         <div *ngSwitchCase="'Uranus'" class="top-left">
           <ul *ngFor="let p of planet">
-              <li> Name: {{p.name}}</li>
-              <li> Type: {{p.type}}</li>
-              <li> Density: {{p.density}}</li>
+            <li> Name: {{p.name}}</li>
+            <li> Type: {{p.type}}</li>
+            <li> Density: {{p.density}}</li>
+            <li> Gravity: {{p.gravity}}</li>
+            <li> Number of moons: {{p.moons}}</li>
+            <li> Number of Planet Years: {{p.planetyears}}</li>
+            <li> Distance From the sun: {{p.sundistance}}</li>
           </ul>
         </div>
+        <div class="text-center">
+          <h3>Uranus</h3>
+        
       <img class="object planet" src="../assets/URANUS.gif" alt="smack"         id="Earth"    style="width:40%" (click)="uranus()" >  
-  
+    </div>
       
-  <h3>Neptune</h3>
         <div *ngSwitchCase="'Neptune'" class="top-left">
           <ul *ngFor="let p of planet">
               <li> Name: {{p.name}}</li>
               <li> Type: {{p.type}}</li>
               <li> Density: {{p.density}}</li>
+              <li> Gravity: {{p.gravity}}</li>
+              <li> Number of moons: {{p.moons}}</li>
+              <li> Number of Planet Years: {{p.planetyears}}</li>
+              <li> Distance From the sun: {{p.sundistance}}</li>
           </ul>
         </div>
+        <div class="text-center">
+        
+    <h3>Neptune</h3>
       <img class="object planet" src="../assets/NEPTUNE.gif"        id="Earth"    style="width:40%" (click)="neptune()" > 
-      
+    </div> 
       
       <h3>Sun</h3>
     <img class="object planet" src="../assets/sun.png"          id="Earth"    style="width:40%"  >  
     </div>
-    </div>
+    
   </body>
