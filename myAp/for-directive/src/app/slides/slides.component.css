@@ -333,3 +333,25 @@
      z-index: 999;
 }
  
+
+.centered {
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+  }
+
+
+  .top-left {
+    position: relative;
+    top: 25%;
+    left: 15%;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 20%;
+    left: 85%;
+
+  }

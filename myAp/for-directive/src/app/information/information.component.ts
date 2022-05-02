@@ -37,6 +37,7 @@ export class InformationComponent implements OnInit {
       name: ['']
     })
   }
+  
 getName(n: any){
   this.planetForm.controls["name"].setValue(n);
 }

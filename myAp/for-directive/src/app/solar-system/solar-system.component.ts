@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { Planet } from '../Planet';
 
@@ -11,7 +12,7 @@ import { Planet } from '../Planet';
 })
 export class SolarSystemComponent implements OnInit {
     
-  constructor() { }
+  constructor(private router:Router) { }
 
 
   ngOnInit(): void {
@@ -71,5 +72,7 @@ export class SolarSystemComponent implements OnInit {
       return Number(planets[2].style.top.split('vmin')[0])
   }
   }
-  
+  home(){
+    this.router.navigate(['home'])
+  }
 }
