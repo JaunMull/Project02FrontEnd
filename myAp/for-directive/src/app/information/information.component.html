@@ -1,100 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 <body>
+    Solar System
+In this project we will be building an app mapping out our solar system. As well as each planets relative positions and giving their descriptions for each celestial body. This is designed to be an informative simulation type project that has a focus on user interactions.
+Requirements
 
-<button (click)="pClick()">Display</button>
+Users can
+•	Register.
+•	(Login/Logout.)/ Username
+•	Email notifications
+o	Email feature.
+•	[Modify this requirement: You must handle images somewhere in your application with S3]
+•	[Requirement 1].zoom in/out
+•	[Requirement 2].Solar System build
+•	[Requirement 3].labeling
+•	[Requirement 4].Animation
 
-<div class="text-center"> 
-    <div *ngIf="btn" class="top-left">
-        <ul *ngFor="let p of planet">
-            <li> Name: {{p.name}}</li>
-            <li> Type: {{p.type}}</li>
-            <li> Density: {{p.density}}</li>
-        </ul>
-    </div>
-    <details   >
-        <summary>Earth    </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/Earth.png"          id="Earth"    style="width:40%" (click)="btnClick()" >  
-</div>
-
-<form [formGroup] ="guessForm">
-    <div>
-        <label for="name" class="form-label">Planet Name:</label>
-        <input formControlName="name" type="text" class="form-control">
-    </div>
-</form>
-
-<div class="text-center">
-
-    <details>
-        <summary>jupiter    </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/jupiter.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Mars   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/mars.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>mercury   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/mercury.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>neptune   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/neptune.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Pluto   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/Pluto.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Saturn   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/saturn.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Sun  </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/sun.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Uranus   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/uranus.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Venus   </summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/venus.png"          id="Earth"    style="width:40%"  >  
-
-    <details>
-        <summary>Asteroid  Belt</summary>
-        <p>Earth is a terrestrial planet with a density of 5.91 g/cm^3.
-            Earth is 93,441,552 miles away from from the sun and has one moon.</p>
-      </details>
-    <img class="object planet" src="../assets/asteroid belt.png"          id="Earth"    style="width:40%"  >  
-    </div>
 </body>
+</html>
