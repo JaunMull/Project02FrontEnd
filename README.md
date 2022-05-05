@@ -34,6 +34,8 @@ In this project we will be building an app mapping out our solar system. As well
 6.  Animation
 ## Getting Started
 -Go to VS code
+
 -Run json server --watch db.json
+
 -Run ng serve -o
 
